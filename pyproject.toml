@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yardstiq-local-provider"
+version = "0.1.0"
+description = "Yardstiq default implementations for local usages"
+requires-python = ">=3.12"
+
+# Dépendances du plugin
+dependencies = [
+    "yardstiq>=0.1.0",
+    "qiskit>=2.1.1",
+    "qiskit-aer>=2.1.1"
+]
+
+[project.entry-points."yardstiq.plugins"]
+local = "yardstiq_compass.plugin_loader"
