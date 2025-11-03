@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "yardstiq-local-provider"
+name = "yardstiq-compass"
 version = "0.1.0"
 description = "Yardstiq default implementations for local usages"
 requires-python = ">=3.12"
